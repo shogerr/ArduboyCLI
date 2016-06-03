@@ -1,0 +1,30 @@
+{
+  "name": "arduboy",
+  "version": "0.0.1",
+  "description": "A command line interface for the Arduboy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogosher/ArduboyCLI.git"
+  },
+  "main": "arduboy.js",
+  "directories": {
+    "bin": "./bin"
+  },
+  "bin": "./bin/arduboy-cli.js",
+  "keywords": [
+    "Arduboy",
+    "Arduino",
+    "Leonardo",
+    "games"
+  ],
+  "author": "Ross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogosher/ArduboyCLI/issues"
+  },
+  "homepage": "https://github.com/rogosher/ArduboyCLI#readme"
+}
