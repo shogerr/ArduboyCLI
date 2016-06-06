@@ -1,8 +1,4 @@
 # Arduboy
-an `npm` module
-
----
-
 This is a general utility for the Arduboy. The module is currently in
 development, and will most likely fail. :D
 
