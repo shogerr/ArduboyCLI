@@ -30,6 +30,12 @@
     return
   }
 
+  if (conf.versions) {
+    arduboy.command = 'version'
+    conf.usage = false
+    arduboy.argv = []
+  }
+
   log.info('using', 'arduboy@%s', arduboy.version)
   log.info('using', 'node@%s', process.version)
 
@@ -46,5 +52,4 @@
     if (er) return errorHandler(er)
     arduboy.commands[arduboy.command](arduboy.argv, errorHandler)
   })
-
 })()
