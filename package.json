@@ -30,9 +30,11 @@
   "dependencies": {
     "abbrev": "^1.0.7",
     "config-chain": "^1.1.10",
+    "editor": "^1.0.0",
     "fs-write-stream-atomic": "^1.0.8",
     "gm": "^1.22.0",
     "graceful-fs": "^4.1.4",
+    "inherits": "^2.0.1",
     "mkdirp": "^0.5.1",
     "module": "^1.2.5",
     "nopt": "^3.0.6",
@@ -47,6 +49,7 @@
     "uid-number": "0.0.6",
     "umask": "^1.1.0",
     "validate-npm-package-name": "^2.2.2",
-    "which": "^1.2.10"
+    "which": "^1.2.10",
+    "write-file-atomic": "^1.1.4"
   }
 }
