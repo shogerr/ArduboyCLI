@@ -1,8 +1,7 @@
 {
   "name": "arduboy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A command line interface for the Arduboy.",
-  "main": "arduboy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +10,10 @@
     "url": "git+https://github.com/rogosher/ArduboyCLI.git"
   },
   "directories": {
-    "bin": "./bin"
+    "bin": "./bin",
+    "lib": "./lib"
   },
+  "main": "./lib/arduboy.js",
   "bin": "./bin/arduboy-cli.js",
   "keywords": [
     "Arduboy",
