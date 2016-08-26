@@ -6,4 +6,6 @@ tmp/
 examples/
 logs/
 
+*.tgz
+
 *.log
