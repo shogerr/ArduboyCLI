@@ -42,3 +42,13 @@ arduboy image
 To help develop the Arduboy Node module: fork and clone the project locally.
 Use `npm link` in the folder the Arduboy repository is cloned into. You can now
 run `arduboy` from the command line interface.
+
+## Links
+
+**Node.js**
+https://nodejs.org/en/download/
+
+**ImageMagick**
+http://www.imagemagick.org/script/binary-releases.php
+**GraphicsMagick**
+http://www.graphicsmagick.org/download.html
