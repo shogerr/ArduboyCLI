@@ -12,7 +12,7 @@ It is possible to insall from the npm registry, or by using git.
 The Arduboy `node` module can be installed using `npm`.
 
 ```
-node install arduboy
+npm install arduboy
 ```
 
 ### `git`
