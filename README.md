@@ -1,6 +1,6 @@
 # arduboy
-This is a general utility for the Arduboy. The module is currently in
-development, and will most likely fail. :D
+This is a general utility for the [Arduboy](https://arduboy.com). The module is currently in
+development.
 
 ## Requirements
 
