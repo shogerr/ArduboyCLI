@@ -7,7 +7,7 @@ development, and will most likely fail. :D
 This module requires that _Imagemagick_ and _GraphicsMagick_ are installed.
 
 ~~~~~~~~
-apt-get install imagemagic graphicsmagick
+apt-get install imagemagick graphicsmagick
 ~~~~~~~~
 
 ## Install
