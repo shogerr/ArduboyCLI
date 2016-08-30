@@ -54,8 +54,8 @@ To generate a series of test images run,
 arduboy image test
 ~~~~~~~~
 
-##### `test`
-To generate a series of test images run,
+##### `tobytes`
+Convert an image provided with `--input=a-file.bmp` to the terminal or redirect `stdout` to a file, `> source_file.c`. 
 
 ~~~~~~~~
 arduboy tobytes --input=./a-file.png > source_file.c
