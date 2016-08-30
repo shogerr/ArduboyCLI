@@ -1,26 +1,35 @@
-# Arduboy
+# arduboy
 This is a general utility for the Arduboy. The module is currently in
 development, and will most likely fail. :D
 
 ## Requirements
-This module requires that _Imagemagick_ and _GraphicMagick_ are installed.
+
+This module requires that _Imagemagick_ and _GraphicsMagick_ are installed.
+
+~~~~~~~~
+apt-get install imagemagic graphicsmagick
+~~~~~~~~
 
 ## Install
-It is possible to insall from the npm registry, or by using git.
 
-### `npm`
+It is possible to install from the npm registry, or by using git.
+
+### Using `npm`
 The Arduboy `node` module can be installed using `npm`.
 
 ```
-npm install arduboy
+npm install arduboy -g
 ```
 
-### `git`
+### Current Source Using `git`
+
 This will locally install the current development build of the `arduboy` module.
 
 ```
 npm install git+https://git@github.com/rogosher/ArduboyCLI.git
 ```
+
+Or use `npm link` from the project directory after cloning the project.
 
 ## Use
 
@@ -28,14 +37,29 @@ From the command line, use the `arduboy` command.
 
 ### Commands
 
+- help
 - config
 - image
 
 ### Examples
-To generate a test image,
-```
-arduboy image
-```
+
+#### `image`
+
+Use `arduboy help image` to get details and a full list of commands.
+
+##### `test`
+To generate a series of test images run,
+
+~~~~~~~~
+arduboy image test
+~~~~~~~~
+
+##### `test`
+To generate a series of test images run,
+
+~~~~~~~~
+arduboy tobytes --input=./a-file.png > source_file.c
+~~~~~~~~
 
 ## Develop
 
