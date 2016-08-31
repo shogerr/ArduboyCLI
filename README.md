@@ -6,9 +6,21 @@ development.
 
 This module requires that _Imagemagick_ and _GraphicsMagick_ are installed.
 
+### Linux
+
 ~~~~~~~~
 apt-get install imagemagick graphicsmagick
 ~~~~~~~~
+
+### Windows
+
+Install the Windows releases for each library.
+
+**ImageMagick**
+http://www.imagemagick.org/script/binary-releases.php#windows
+
+**GraphicsMagick**
+https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/
 
 ## Install
 

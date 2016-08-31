@@ -1,6 +1,6 @@
 {
   "name": "arduboy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A command line interface for the Arduboy.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 ;(function() {
-  process.title = 'arduboy'
+  //process.title = 'arduboy'
 
   var log = require('npmlog')
   log.pause()
