@@ -9,7 +9,7 @@ Installation: `npm install -g arduboy`
 ~~~~~~(shell)
 $ arduboy image tobytes --input=arduboy_logo.png > arduboy_logo.c
 info worked if it ends with ok
-info using arduboy@0.0.7
+info using arduboy@0.0.8
 info using node@v5.7.0
 info ok
 
