@@ -1,73 +1,78 @@
 # arduboy
-This is a general utility for the [Arduboy](https://arduboy.com). The module is currently in
-development.
+This is a general utility for the [Arduboy](https://arduboy.com).
 
-## Requirements
+The `arduboy` module uses [NodeJS](https://nodjs.org).
 
-This module requires that _Imagemagick_ and _GraphicsMagick_ are installed.
+Installation: `npm install -g arduboy`
 
-### Linux
+**Example:** Generate a `C` source file from an image.
+~~~~~~(shell)
+$ arduboy image tobytes --input=arduboy_logo.png > arduboy_logo.c
+info worked if it ends with ok
+info using arduboy@0.0.7
+info using node@v5.7.0
+info ok
 
-~~~~~~~~
-apt-get install imagemagick graphicsmagick
-~~~~~~~~
-
-### Windows
-
-Install the Windows releases for each library.
-
-**ImageMagick**
-http://www.imagemagick.org/script/binary-releases.php#windows
-
-**GraphicsMagick**
-https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/
+$ cat arduboy_logo.c
+const static unsigned char arduboy_logo PROGMEM =
+{
+  0xf0,0xf8,0x9c,0x8e,0x87,0x83,0x87,0x8e,
+  0x9c,0xf8,0xf0,0x00,0x00,0xfe,0xff,0x03,
+  0x03,0x03,0x03,0x03,0x07,0x0e,0xfc,0xf8,
+  0x00,0x00,0xfe,0xff,0x03,0x03,0x03,0x03,
+  0x03,0x07,0x0e,0xfc,0xf8,0x00,0x00,0xff,
+  0xff,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  0xff,0xff,0x00,0x00,0xfe,0xff,0x83,0x83,
+  0x83,0x83,0x83,0xc7,0xee,0x7c,0x38,0x00,
+  0x00,0xf8,0xfc,0x0e,0x07,0x03,0x03,0x03,
+  0x07,0x0e,0xfc,0xf8,0x00,0x00,0x3f,0x7f,
+  0xe0,0xc0,0x80,0x80,0xc0,0xe0,0x7f,0x3f,
+  0xff,0xff,0x01,0x01,0x01,0x01,0x01,0x01,
+  0x01,0xff,0xff,0x00,0x00,0xff,0xff,0x0c,
+  0x0c,0x0c,0x0c,0x1c,0x3e,0x77,0xe3,0xc1,
+  0x00,0x00,0x7f,0xff,0xc0,0xc0,0xc0,0xc0,
+  0xc0,0xe0,0x70,0x3f,0x1f,0x00,0x00,0x1f,
+  0x3f,0x70,0xe0,0xc0,0xc0,0xc0,0xe0,0x70,
+  0x3f,0x1f,0x00,0x00,0x7f,0xff,0xc1,0xc1,
+  0xc1,0xc1,0xc1,0xe3,0x77,0x3e,0x1c,0x00,
+  0x00,0x1f,0x3f,0x70,0xe0,0xc0,0xc0,0xc0,
+  0xe0,0x70,0x3f,0x1f,0x00,0x00,0x00,0x00,
+  0x00,0x01,0xff,0xff,0x01,0x00,0x00,0x00
+}
+~~~~~~
 
 ## Install
 
-It is possible to install from the npm registry, or by using git.
+Install using `npm`.
 
-### Using `npm`
-The Arduboy `node` module can be installed using `npm`.
+~~~~~~(shell)
+npm install --global arduboy
+~~~~~~
 
-```
-npm install arduboy -g
-```
+## Using `arduboy`
 
-### Current Source Using `git`
-
-This will locally install the current development build of the `arduboy` module.
-
-```
-npm install git+https://git@github.com/rogosher/ArduboyCLI.git
-```
-
-Or use `npm link` from the project directory after cloning the project.
-
-## Use
-
-From the command line, use the `arduboy` command.
+From a command prompt, run the `arduboy` command. To see a complete list of
+commands, run `arduboy --help`.
 
 ### Commands
 
-- help
-- config
-- image
+~~~~~~(shell)
+help, config, image
+~~~~~~
 
-### Examples
-
-#### `image`
+### Using `image`
 
 Use `arduboy help image` to get details and a full list of commands.
 
-##### `test`
+#### `test`
 To generate a series of test images run,
 
 ~~~~~~~~
 arduboy image test
 ~~~~~~~~
 
-##### `tobytes`
-Convert an image provided with `--input=a-file.bmp` to the terminal or redirect `stdout` to a file, `> source_file.c`. 
+#### `tobytes`
+Convert an image provided with `--input=a-file.bmp` to the terminal or redirect `stdout` to a file, `> source_file.c`.
 
 ~~~~~~~~
 arduboy tobytes --input=./a-file.png > source_file.c
@@ -79,12 +84,46 @@ To help develop the Arduboy Node module: fork and clone the project locally.
 Use `npm link` in the folder the Arduboy repository is cloned into. You can now
 run `arduboy` from the command line interface.
 
+### Install Latest Source
+
+This will locally install the current development build of the `arduboy` module.
+
+~~~~~~(shell)
+npm install git+https://git@github.com/rogosher/ArduboyCLI.git
+~~~~~~
+
+Or use `npm link` from the project directory after cloning the project.
+
+
+### 'Special Features' Requirement
+
+This module requires that _Imagemagick_ be installed to generate the test
+images.
+
+#### Linux
+
+**Ubuntu**
+~~~~~~~~(shell)
+apt-get install imagemagick
+~~~~~~~~
+
+#### Windows
+
+Install the Windows releases for each library.
+
+**ImageMagick** &middot;
+[download](http://www.imagemagick.org/script/binary-releases.php#windows)
+
+**GraphicsMagick** &middot;
+[download](https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/)
+
 ## Links
 
-**Node.js**
+**Node.js** -
 https://nodejs.org/en/download/
 
-**ImageMagick**
+**ImageMagick** -
 http://www.imagemagick.org/script/binary-releases.php
-**GraphicsMagick**
+
+**GraphicsMagick** -
 http://www.graphicsmagick.org/download.html

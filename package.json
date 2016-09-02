@@ -1,6 +1,6 @@
 {
   "name": "arduboy",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A command line interface for the Arduboy.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,6 +35,7 @@
     "gm": "^1.23.0",
     "graceful-fs": "^4.1.4",
     "inherits": "^2.0.1",
+    "jimp": "^0.2.27",
     "mkdirp": "^0.5.1",
     "module": "^1.2.5",
     "nopt": "^3.0.6",
