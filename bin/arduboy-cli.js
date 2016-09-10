@@ -3,6 +3,17 @@
 ;(function() {
   //process.title = 'arduboy'
 
+  if (typeof WScript !== 'undefined') {
+    WScript.echo(
+      'arduboy node module will\n' +
+        'not run with the Windows Scripting Host\n\n'
+    )
+    WScript.quit(1)
+    return
+  }
+
+  process.title = 'arduboy'
+
   var log = require('npmlog')
   log.pause()
 

@@ -57,10 +57,10 @@ commands, run `arduboy --help`.
 ### Commands
 
 ~~~~~~(shell)
-help, config, image
+help, config, image, hardware, generate
 ~~~~~~
 
-### Using `image`
+### `image`
 
 Use `arduboy help image` to get details and a full list of commands.
 
@@ -77,6 +77,18 @@ Convert an image provided with `--input=a-file.bmp` to the terminal or redirect 
 ~~~~~~~~
 arduboy tobytes --input=./a-file.png > source_file.c
 ~~~~~~~~
+
+### `generate`
+
+~~~~~~
+arduboy g sketch --output=mysketch.ino
+~~~~~~
+
+#### Other File Types
+
+##### `sketch`
+
+##### `cpp`
 
 ## Develop
 
